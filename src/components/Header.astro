@@ -25,7 +25,7 @@ const links = [
 <header class="header">
   <div class="container header-inner">
     <a href={getRelativeLocaleUrl(lang, '')} class="brand" aria-label={SITE.fullName}>
-      {/* Logo de Inty Caren Transfers (el de día/noche pasó al footer).
+      {/* Logo de Transfers Inty Caren (el de día/noche pasó al footer).
           alt="" porque el link ya dice el nombre de la marca */}
       <Image src={logoMarca} alt="" width={60} height={60} densities={[1, 2, 3]} loading="eager" class="marca-logo" />
       <span class="brand-name">{SITE.fullName}</span>
@@ -224,7 +224,7 @@ const links = [
     }
   }
   /* Celus muy angostos (320 px): el nombre largo pasa a dos renglones
-     ("Inty Caren / Transfers") en vez de empujar la hamburguesa afuera */
+     ("Transfers / Inty Caren") en vez de empujar la hamburguesa afuera */
   @media (max-width: 360px) {
     .brand-name {
       white-space: normal;

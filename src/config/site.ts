@@ -30,9 +30,9 @@ export const SITE = {
    */
   chile: false,
 
-  // Nombre nuevo desde el 15/10/2026 (antes: CS Free Sur Traslados)
-  name: 'Inty Caren Transfers',
-  fullName: 'Inty Caren Transfers',
+  // Nombre desde el 28/10/2026 (antes: Inty Caren Transfers, y antes CS Free Sur Traslados)
+  name: 'Transfers Inty Caren',
+  fullName: 'Transfers Inty Caren',
   city: 'El Calafate',
   region: 'Santa Cruz, Patagonia Argentina',
 
@@ -42,7 +42,8 @@ export const SITE = {
   // Cómo se muestra el número en pantalla
   whatsappDisplay: '+54 9 2902 40-3558',
 
-  email: 'intycarentransfers@gmail.com',
+  // Se mantiene el mail original: ya está vinculado a su perfil de Google Maps
+  email: 'csfreetraslados@gmail.com',
   // TODO: cambiar cuando la dueña pase el Instagram nuevo (este es el de CS Free Sur)
   instagram: 'https://www.instagram.com/csfreesurtraslados/',
   instagramHandle: '@csfreesurtraslados',

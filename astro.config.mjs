@@ -6,7 +6,7 @@ export default defineConfig({
   // Dominio TEMPORAL gratuito de Vercel. Cuando compres el dominio real, cambialo acá.
   // Dirección pública del sitio (la usan og:image, canonical y schema.org).
   // Tiene que coincidir con el nombre del proyecto en Vercel.
-  site: 'https://intycaren.vercel.app',
+  site: 'https://transfersintycaren.vercel.app',
 
   i18n: {
     defaultLocale: 'es',

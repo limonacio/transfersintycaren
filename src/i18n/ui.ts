@@ -16,7 +16,7 @@ export const LANG_LOCALE: Record<Lang, string> = { es: 'es_AR', en: 'en_US', pt:
 
 const es = {
   meta: {
-    title: 'Inty Caren Transfers | Remis privado en El Calafate',
+    title: 'Transfers Inty Caren | Remis privado en El Calafate',
     description:
       'Remis privado desde El Calafate en Chevrolet Spin nueva: aeropuerto, Perito Moreno, El Chaltén y estancias.',
     // Versión que se usa cuando SITE.chile = true
@@ -42,7 +42,7 @@ const es = {
       'Aeropuerto, Glaciar Perito Moreno, El Chaltén, estancias y más, en una Chevrolet Spin nueva. Salís a tu hora y parás donde quieras.',
     subtitleChile:
       'Aeropuerto, Glaciar Perito Moreno, El Chaltén, estancias y Chile en una Chevrolet Spin nueva. Salís a tu hora y parás donde quieras.',
-    photoAlt: 'La Chevrolet Spin de Inty Caren Transfers frente al Glaciar Perito Moreno',
+    photoAlt: 'La Chevrolet Spin de Transfers Inty Caren frente al Glaciar Perito Moreno',
     vehicleTitle: 'Chevrolet Spin 0 km',
     vehicleText: (n: number) => `Hasta ${n} pasajeros con equipaje`,
   },
@@ -151,7 +151,7 @@ export type Dict = typeof es;
 
 const en: Dict = {
   meta: {
-    title: 'Inty Caren Transfers | Private driver in El Calafate',
+    title: 'Transfers Inty Caren | Private driver in El Calafate',
     description:
       'Private driver from El Calafate in a brand-new Chevrolet Spin: airport, Perito Moreno, El Chaltén and estancias.',
     descriptionChile:
@@ -176,7 +176,7 @@ const en: Dict = {
       'Airport, Perito Moreno Glacier, El Chaltén, estancias and more, in a brand-new Chevrolet Spin. Leave when you want, stop wherever you like.',
     subtitleChile:
       'Airport, Perito Moreno Glacier, El Chaltén, estancias and Chile in a brand-new Chevrolet Spin. Leave when you want, stop wherever you like.',
-    photoAlt: 'The Inty Caren Transfers Chevrolet Spin in front of the Perito Moreno Glacier',
+    photoAlt: 'The Transfers Inty Caren Chevrolet Spin in front of the Perito Moreno Glacier',
     vehicleTitle: 'Brand-new Chevrolet Spin',
     vehicleText: (n: number) => `Up to ${n} passengers with luggage`,
   },
@@ -283,7 +283,7 @@ const en: Dict = {
 
 const pt: Dict = {
   meta: {
-    title: 'Inty Caren Transfers | Motorista particular em El Calafate',
+    title: 'Transfers Inty Caren | Motorista particular em El Calafate',
     description:
       'Motorista particular desde El Calafate em Chevrolet Spin nova: aeroporto, Perito Moreno, El Chaltén e estâncias.',
     descriptionChile:
@@ -308,7 +308,7 @@ const pt: Dict = {
       'Aeroporto, Geleira Perito Moreno, El Chaltén, estâncias e mais, em uma Chevrolet Spin nova. Saia no seu horário e pare onde quiser.',
     subtitleChile:
       'Aeroporto, Geleira Perito Moreno, El Chaltén, estâncias e Chile em uma Chevrolet Spin nova. Saia no seu horário e pare onde quiser.',
-    photoAlt: 'A Chevrolet Spin da Inty Caren Transfers diante da Geleira Perito Moreno',
+    photoAlt: 'A Chevrolet Spin da Transfers Inty Caren diante da Geleira Perito Moreno',
     vehicleTitle: 'Chevrolet Spin 0 km',
     vehicleText: (n: number) => `Até ${n} passageiros com bagagem`,
   },
