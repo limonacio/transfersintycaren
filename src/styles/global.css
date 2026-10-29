@@ -20,6 +20,9 @@
   --accent: #0f5b73;
   --accent-hover: #0a4254;
   --accent-soft: #e4eef1;
+  /* Nombres de destinos y sus links: azul glaciar más intenso que --ink (pedido 28/10) */
+  --dest-title: #0a4a70;
+  --dest-link: #0b5f88;
   --ice: #cfe6ee;
   --ice-ink: #28404f;
   --deep: #0e2233;
@@ -79,6 +82,8 @@
   --accent: #6fc0dc;
   --accent-hover: #9ad5ea;
   --accent-soft: #173447;
+  --dest-title: #bfe4f2;
+  --dest-link: var(--accent);
   --on-accent: #07202b;
   --on-ink: #0b1620;
   --ice: #133244;
