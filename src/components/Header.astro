@@ -5,8 +5,13 @@ import { SITE } from '../config/site';
 import { waLink } from '../lib/whatsapp';
 import Icon from './Icon.astro';
 import MenuPreferencias from './MenuPreferencias.astro';
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import logoMarca from '../assets/logo-inty.png';
+// Versión "solo ícono" (el pin) para el celu: a 46 px el texto del logo completo
+// no se lee y ensucia. El nombre ya está escrito al lado.
+import logoPin from '../assets/logo-inty-pin.png';
+
+const pinMovil = await getImage({ src: logoPin, width: 46, height: 46, densities: [1, 2, 3] });
 
 interface Props {
   lang: Lang;
@@ -27,7 +32,10 @@ const links = [
     <a href={getRelativeLocaleUrl(lang, '')} class="brand" aria-label={SITE.fullName}>
       {/* Logo de Transfers Inty Caren (el de día/noche pasó al footer).
           alt="" porque el link ya dice el nombre de la marca */}
-      <Image src={logoMarca} alt="" width={60} height={60} densities={[1, 2, 3]} loading="eager" class="marca-logo" />
+      <picture>
+        <source media="(max-width: 960px)" srcset={pinMovil.srcSet.attribute} width="46" height="46" />
+        <Image src={logoMarca} alt="" width={60} height={60} densities={[1, 2, 3]} loading="eager" class="marca-logo" />
+      </picture>
       <span class="brand-name">{SITE.fullName}</span>
     </a>
 
@@ -85,6 +93,11 @@ const links = [
     gap: 12px;
     color: var(--accent);
     text-decoration: none;
+  }
+  /* El <picture> es el hijo del flex: sin flex:none se encoge a 0 de ancho */
+  .brand picture {
+    display: block;
+    flex: none;
   }
   .marca-logo {
     display: block;
@@ -223,9 +236,10 @@ const links = [
       font-size: 15px;
     }
   }
-  /* Celus muy angostos (320 px): el nombre largo pasa a dos renglones
-     ("Transfers / Inty Caren") en vez de empujar la hamburguesa afuera */
-  @media (max-width: 360px) {
+  /* Celus (≤460 px): el nombre pasa a dos renglones ("Transfers / Inty Caren")
+     en vez de pisar el botón de idioma y empujar la hamburguesa afuera.
+     Medido: a 375–430 px el nombre en un renglón no entraba. */
+  @media (max-width: 460px) {
     .brand-name {
       white-space: normal;
       line-height: 1.05;
